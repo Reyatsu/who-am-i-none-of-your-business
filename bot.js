@@ -22,7 +22,9 @@ Client.on('message', (message)=>{
 		{
 			var summ = Number(s1[0]) - Number(s1[1]);
 		}
-		message.channel.send('!'+summ);
+		setTimeout(function() {
+			message.channel.send('!'+summ);
+		},3000);
 		clearTimeout(timerId);
 		timerId = setTimeout(function() {
 		  channel.send('!bump');
