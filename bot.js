@@ -5,7 +5,7 @@ var r2 = /\+|\-/;
 timerId = 0;
 Client.on("ready", ()=>{
 	console.log("Bot2 is online");
-	channel = Client.channels.get('352924339068338177');
+	channel = Client.channels.get('407273518737391626');
 	channel.send('!bump');
 })
 Client.on('message', (message)=>{
